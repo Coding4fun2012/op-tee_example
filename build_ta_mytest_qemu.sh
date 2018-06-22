@@ -31,3 +31,11 @@ TA_CROSS_COMPILE=arm-linux-gnueabihf-
 # Build the Trusted Application
 cd $CURDIR/ta
 make CROSS_COMPILE=$TA_CROSS_COMPILE $@
+
+#build the normal Application
+cd $CURDIR/so
+make CROSS_COMPILE=$HOST_CROSS_COMPILE $@
+
+#build the so
+cd $CURDIR/app
+make CROSS_COMPILE=$HOST_CROSS_COMPILE $@
