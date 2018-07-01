@@ -26,6 +26,8 @@
 #ifndef MOUDLE_NAME_H_
 #define MOUDLE_NAME_H_
 
+#include <stdint.h>
+
 
 
 
